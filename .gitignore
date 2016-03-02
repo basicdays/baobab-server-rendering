@@ -1,0 +1,17 @@
+# project
+lib/
+node_modules/
+*.log
+
+# editors
+.idea/
+*.kate-swp
+*.swp
+*~
+
+# file managers
+.directory
+.DS_Store
+
+# git
+*.orig
