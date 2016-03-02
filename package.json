@@ -16,8 +16,8 @@
   "dependencies": {
     "baobab": "^2.3.3",
     "baobab-react": "^1.0.1",
-    "ejs": "~2.3.3",
-    "express": "~4.13.1",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },
