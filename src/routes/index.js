@@ -19,7 +19,7 @@ let router = new Router();
 router.get('/*', (req, res, next) => {
 	try {
 		let App = root(<Stuff/>, new Baobab());
-		let content = renderToString(<Stuff/>);
+		let content = renderToString(<App/>);
 		res.render('index', {content});
 	} catch (err) {
 		next(err);
