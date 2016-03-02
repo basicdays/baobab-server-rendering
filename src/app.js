@@ -4,8 +4,8 @@ import 'babel-polyfill';
 import express from 'express';
 import 'source-map-support';
 
-
 import routes from './routes/index';
+
 
 let app = express();
 
@@ -16,15 +16,16 @@ app.set('view engine', 'ejs');
 app.use('/', routes);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
 	let err = new Error('Not Found');
 	err.status = 404;
 	next(err);
 });
 
 // error handlers
-app.use(function(err, req, res) {
-	res.status(err.status || 500);
+app.use((err, req, res, next) => {
+	err.status = err.status || 500;
+	res.status(err.status);
 	res.render('error', {
 		message: err.message,
 		error: err
