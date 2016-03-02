@@ -1,8 +1,8 @@
 Baobab Server Rendering
 =======================
 
-Install
--------
+Build
+-----
 ```bash
 $ npm install
 $ npm run build
