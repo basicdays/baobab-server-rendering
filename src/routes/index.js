@@ -17,7 +17,7 @@ class Stuff extends Component {
 let router = new Router();
 
 router.get('/*', (req, res, next) => {
-	let App = root(<Stuff/>, new Baobab());
+	let App = root(Stuff, new Baobab());
 	let content = renderToString(<App/>);
 	res.render('index', {content});
 });

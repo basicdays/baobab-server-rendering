@@ -1,9 +1,7 @@
-import {join} from 'path';
-
 import 'babel-polyfill';
-import express from 'express';
 import 'source-map-support';
-
+import {join} from 'path';
+import express from 'express';
 import routes from './routes/index';
 
 
